@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech for all</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="menu">
+        <div class="box_menu">
+            <button type="button" onmouseout="hideMessage()" onmouseover="showMessage1()">
+                <a href="#"><i class="bi bi-house"></i></a>
+                <div id="message__github">Home</div>
+            </button>
+
+            <button type="button" onmouseout="hideMessage()" onmouseover="showMessage2()">
+                <a href="#"><i class="bi bi-briefcase-fill"></i></i></a>
+                <div id="message__linkedin">Serviços</div>
+            </button>
+
+            <button type="button" onmouseout="hideMessage()" onmouseover="showMessage3()">
+                <a href="#"><i class="bi bi-building"></i></a>
+                <div id="message__instagram">Sobre</div>
+            </button>
+
+            <button type="button" onmouseout="hideMessage()" onmouseover="showMessage4()">
+                <a href="#"><i class="bi bi-envelope-fill"></i></a>
+                <div id="message__twitter">Contato</div>
+            </button>
+        </div>
+    </nav>
+
+    <header class="cabecalho">
+        <img src="./assets/img/logo_txt_branca.png" class="logo">
+    </header>
+
+    <div class="tela1 tela1_grid">
+
+        <div class="apresentacao">
+            <div class="txt_apresentacao">
+                <h2>TECH FOR ALL DÁ AS BOAS VINDAS</h2>
+                <p class="txt_tela1">Facilitando a resolução de problemas</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tela2 tela2_grid">
+
+        <h2 id="h2_tela2">Serviços</h2>
+
+        <div class="p1">
+            <button class="btn_contratar">contratar</button>
+            <div class="box_pi">
+                <img src="./assets/img/ferro.png" class="img_pi">
+                <h2>Básico</h2>
+            </div>
+        </div>
+
+        <div class="p2">
+            <button class="btn_contratar">contratar</button>
+            <div class="box_pi">
+                <img src="./assets/img/ouro.png" class="img_pi">
+                <h2>Intermediário</h2>
+            </div>
+        </div>
+
+        <div class="p3">
+            <button class="btn_contratar">contratar</button>
+            <div class="box_pi">
+                <img src="./assets/img/diamante.png" class="img_pi">
+                <h2>Avançado</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tela3 tela3_grid">
+        <div id="box_decoracao9"></div>
+
+
+        <button onclick="toggleClasses()" class="btn_sobre"><i class="bi bi-chevron-right"></i></button>
+        <div class="sobre1 sobre_tela1">
+            <p>
+                A Tech For All é uma empresa de consultoria, oferecendo serviços especializados em implementação de
+                sistemas e infraestrutura.
+                Nossa equipe altamente qualificada trabalha em estreita colaboração com os clientes para entender suas
+                necessidades e fornecer soluções personalizadas.
+                Com vasta experiência e conhecimento do mercado, nos esforçamos para superar as expectativas dos
+                clientes e oferecer resultados de alto nível.
+                Nosso compromisso com a excelência e a satisfação do cliente nos coloca como referência no setor de
+                consultoria.</p>
+
+            <img src="./assets/img/img3.png" class="img_sobre">
+        </div>
+
+        <div class="sobre2 sobre_tela2">
+            <h1 id="txt_fund">Fundadores</h1>
+            <div class="fund_box">
+                <div class="fund" id="wellington">
+                    <h2>Wellington Araujo</h2>
+                    <img src="./assets/img/wellington.png" class="img_fund">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-github icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter icon_fund"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="fund" id="Guilherme">
+                    
+                    <h2>Gabriel Ferrira</h2>
+                    <img src="./assets/img/guilherme.png" class="img_fund">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-github icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter icon_fund"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="fund" id="Rai">
+                    <h2>Rai gonçalves</h2>
+                    <img src="./assets/img/rai.jpg" class="img_fund">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-github icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-linkedin icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram icon_fund"></i></a></li>
+                        <li><a href="#"><i class="bi bi-twitter icon_fund"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="tela4">
+
+        <div class="contactUs">
+            <div class="title">
+                <h2>Contatos</h2>
+            </div>
+            <div class="box">
+                <!-- form -->
+                <div class="contact form">
+                    <h3>Envie uma mensagem</h3>
+                    <form>
+                        <div class="formBox">
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Primeiro nome</span>
+                                    <input type="text" name="" required="required">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Sobrenome</span>
+                                    <input type="text" name="" required="required">
+                                </div>
+                            </div>
+
+                            <div class="row50">
+                                <div class="inputBox">
+                                    <span>Email</span>
+                                    <input type="text" name="" required="required">
+                                </div>
+                                <div class="inputBox">
+                                    <span>Tefone</span>
+                                    <input type="text" name="" required="required">
+                                </div>
+                            </div>
+
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <span>
+                                        <main>Menssage</main>
+                                    </span>
+                                    <textarea placeholder="Digite sua mensagem aqui..."></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row100">
+                                <div class="inputBox">
+                                    <input type="submit" value="Send">
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <!-- info Box-->
+                <div class="contact info">
+                    <h3>informações de contato</h3>
+                    <div class="infoBox">
+                        <div>
+                            <span><ion-icon name="location"></ion-icon></span>
+                            <p>R. Dr. Antônio bento, 393 <br>Santo Amaro - SP</p>
+                        </div>
+                        <div>
+                            <span><ion-icon name="mail"></ion-icon></span>
+                            <a href="mailto:melorai84@gmail.com">melorai84@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><ion-icon name="call"></ion-icon></span>
+                            <a href="tel:11 965922155">11 965922155</a>
+                        </div>
+                        <!-- social media -->
+                        <ul class="sci">
+                            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- map -->
+                <div class="contact map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.806369246222!2d-46.706415724988716!3d-23.647104478741053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1683615077727!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="row">
+
+            <div class="column">
+
+                <h4>Sobre nós</h4>
+
+                <p>
+                    A Tech For All é uma empresa de consultoria líder, especializada em implementação de sistemas e
+                    infraestrutura, com foco na excelência e satisfação do cliente.</p>
+
+            </div>
+
+            <div class="column">
+
+                <h4>Links Rápidos</h4>
+
+                <ul>
+
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Home</a></li>
+
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Serviços</a></li>
+
+                    <li><a href="#"><i class="fa fa-angle-right"></i> Contatos</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="column">
+
+                <h4>Conecte-se conosco</h4>
+
+                <ul class="social-icons">
+
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">© 2023 Todos os direitos reservados</p>
+
+    </footer>
+
+
+
+
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/btn_sobre.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

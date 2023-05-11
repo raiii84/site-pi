@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: 30px 1fr 50px 50px;
+    grid-template-rows: 50px 1.5fr 1fr 50px 50px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.cabecalho {
+    grid-area: 1 / 1 / 2 / 5;
+}
+
+.btn {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.img {
+    grid-area: 2 / 1 / 6 / 5;
+}
+
+.txt {
+    grid-area: 3 / 1 / 6 / 5;
+}

@@ -1,0 +1,25 @@
+<nav id="menu">
+        <div class="box_icons">
+            <button type="button"onmouseout="hideMessage()" onmouseover="showMessage1()" id="github">
+                <a href="#"><i class="bi bi-github" ></i></a>
+            </button>
+
+            <button type="button"onmouseout="hideMessage()" onmouseover="showMessage2()" id="linkedin">
+                <a href="#"><i class="bi bi-linkedin" ></i></a>
+            </button>
+
+            <button type="button"onmouseout="hideMessage()" onmouseover="showMessage3()" id="instagram">
+                <a href="#"><i class="bi bi-instagram" ></i></a>
+            </button>
+
+            <button type="button"onmouseout="hideMessage()" onmouseover="showMessage4()" id="twitter">
+                <a href="#"><i class="bi bi-twitter" ></i></a>
+            </button>
+        </div>
+        <div>
+            <h1 id="github2">github</h1>
+            <h1 id="linkedin2">linkedin</h1>
+            <h1 id="instagram2">instagram</h1>
+            <h1 id="twitter2">twitter</h1>
+        </div>
+    </nav>

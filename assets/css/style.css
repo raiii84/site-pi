@@ -1,0 +1,775 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: var(--cor2);
+    font-family: 'Roboto', sans-serif, 'MinSans', 'NewsportDemo', 'ZIMETA Sans';
+    font-size: 16px;
+
+}
+
+:root {
+    --cor1: #1E1E1E;
+    --cor2: #696969;
+    --cor3: #D9D9D9;
+}
+
+@font-face {
+    font-family: 'MinSans';
+    src: url('/assets/fonts/MinSans-Regular.woff') format('woff'),
+        url('/assets/fonts/MinSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'NewsportDemo';
+    src: url('/assets/fonts/NewsportDemoRegular.woff') format('woff'),
+        url('/assets/fonts/NewsportDemoRegular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'ZIMETA';
+    src: url('/assets/fonts/ZIMETA-BlackPersonalUse.woff') format('woff'),
+        url('/assets/fonts/ZIMETA-BlackPersonalUse.woff2') format('woff2');
+}
+
+/* .......................................................tela1....................................................... */
+
+.tela1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/image1.png);
+    display: flex;
+    align-items: flex-end;
+    background-repeat: round;
+}
+
+.apresentacao {
+    background-color: rgba(105, 105, 105, 0.3);
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.txt_apresentacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+
+}
+
+.txt_apresentacao h2 {
+    font-family: NewsportDemo;
+    font-size: 3em;
+    letter-spacing: 4px;
+    word-spacing: 5px;
+    color: #ffffff;
+}
+
+.txt_tela1 {
+    font-size: 1.5em;
+    color: white;
+    font-family: 'MinSans';
+}
+
+/* .......................................................tela2....................................................... */
+
+.tela2 {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: calc(100vh - 50px)
+}
+
+.tela2 {
+    display: grid;
+    grid-template-columns: 45px repeat(3, 1fr) 45px;
+    grid-template-rows: 50px 45px 80px 1fr 45px;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+}
+
+#h2_tela2 {
+    grid-area: 2 / 2 / 3 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Impact;
+    font-size: 44px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.p1 {
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: #535353;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2 {
+    grid-area: 4 / 3 / 5 / 4;
+    background-color: #D8E732;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p3 {
+    grid-area: 4 / 4 / 5 / 5;
+    background-color: #2DB4BD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_contratar {
+    background-color: var(--cor2);
+    border-radius: 28px;
+    border: 1px solid rgb(86, 86, 86);
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'ZIMETA';
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding: 10px 70px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #696969;
+    margin: 0 0 10px 0;
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+}
+
+.btn_contratar:hover {
+    background-color: rgb(86, 86, 86);
+}
+
+.btn_contratar:active {
+    position: relative;
+    top: 1px;
+}
+
+.box_pi {
+    position: absolute;
+    width: 26%;
+    height: 64%;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 80px;
+    justify-content: flex-end;
+}
+
+.box_pi:hover {
+    background: rgba( 255, 255, 255, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box_pi h2 {
+    font-family: Impact;
+    font-size: 44px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: #000000;
+    padding-top: 10px;
+}
+
+.img_pi {
+    width: 50%;
+    padding-top: 20px;
+}
+
+/* .......................................................tela3....................................................... */
+
+.tela3 {
+    position: absolute;
+    top: 193vh;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+}
+
+.sobre_tela1{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 85%;
+    height: 90%;
+    top: 5%;
+    left: 8%;
+}
+
+.sobre_tela1 p{
+    width: 40%; 
+    padding: 35px;
+    font-size: 1.5em;
+    font-family: 'MinSans';
+}
+
+.img_sobre{
+    width: 55%;
+    height: 108%;
+    padding: 60px;
+}
+
+.sobre_tela2{
+    display: none;
+    align-items: center;
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 85%;
+    height: 90%;
+    top: 5%;
+    left: 8%;
+}
+
+#txt_fund {
+    position: absolute;
+    font-family: Impact;
+    font-size: 44px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    color: #000000;
+    padding: 20px;
+    top: 0;
+}
+
+.fund_box {
+    position: absolute;
+    width: 85%;
+    height: 80%;
+    top: 15%;
+    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fund {
+    width: 27%;
+    height: 80%;
+    background-color: var(--cor3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fund h2 {
+    font-family: 'MinSans';
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.fund img {
+    width: 70%;
+    height: 60%;
+    padding: 20px;
+}
+
+.fund ul {
+    display: flex;
+}
+
+.fund ul li {
+    list-style: none;
+    font-size: 2em;
+}
+
+.icon_fund {
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.btn_sobre{
+    position: absolute;
+    top: 42vh;
+    left: 95vw;
+    z-index: 4;
+    font-size: 3em;
+}
+
+
+/* .......................................................tela4....................................................... */
+
+.tela4{
+	position: absolute;
+	top: 285vh; 
+	left: 30px;
+	width: calc(100vw - 51px);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2 {
+    font-family: Impact;
+    font-size: 44px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.form{
+    grid-area: form;
+}
+
+.info{
+    grid-area: info;
+}
+
+.map{
+    grid-area: map;
+}
+
+.contact {
+    padding: 25px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: var(--cor1);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* form */
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+
+.inputBox span {
+    color: var(--cor1);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    color: #000;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 200px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.inputBox input[type="submit"] {
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/*............................................... info................................................ */
+
+.info {
+    background: #3000C9
+    ;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: var(--cor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0;
+
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/* .....................................................rodapé......................................................... */
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    top: 400vh;
+}
+
+.row {
+    display: flex;
+    padding: 1rem 6rem;
+    background-color: var(--cor3);
+}
+
+.column {
+    width: calc(100% / 3);
+    padding: 0 0.9375rem;
+}
+
+h4 {
+    margin-bottom: 0.9375rem;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.625rem;
+}
+
+ul li a {
+    color: #333;
+    font-size: 1rem;
+}
+
+ul li i {
+    color: var(--cor1);
+}
+
+ul li a:hover {
+    color: var(--cor2);
+}
+
+ul.social-icons {
+    display: flex;
+    column-gap: 0.625rem;
+}
+
+.social-icons i {
+    color: white;
+}
+
+ul.social-icons li {
+    margin-bottom: 0rem;
+}
+
+ul.social-icons li a {
+    display: grid;
+    place-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: var(--cor1);
+}
+
+ul.social-icons li:hover a {
+    background-color: var(--cor2);
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    background-color: var(--cor1);
+    padding: 0.6rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        margin: 0.4rem 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        font-size: 1.3125rem;
+    }
+
+    p {
+        font-size: 0.9375rem;
+    }
+
+    ul li a {
+        font-size: 0.9375rem;
+    }
+
+    ul.social-icons li a {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}
+
+/* ....................................................decoracao....................................................... */
+
+#box_decoracao9 {
+    width: 55vw;
+    height: 210vh;
+    position: absolute;
+    z-index: -1;
+    left: 55px;
+    top: 13px;
+    border: 5px solid rgba(173, 0, 211, 0.75);
+    -webkit-box-shadow: 0px 0px 21px -1px rgba(173, 0, 211, 0.75), inset 0px 0px 21px -1px rgba(173, 0, 211, 0.75);
+-moz-box-shadow: 0px 0px 21px -1px rgba(173, 0, 211, 0.75), inset 0px 0px 21px -1px rgba(173, 0, 211, 0.75);
+box-shadow: 0px 0px 21px -1px rgba(173, 0, 211, 0.75), inset 0px 0px 21px -1px rgba(173, 0, 211, 0.75);
+}
+
+
+/*.................................................responsividade........................................................*/
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .tela1_grid {
+        grid-template-columns: 10px 1fr repeat(2, 40px);
+        grid-template-rows: 50px 200px 200px repeat(2, 40px);
+    }
+
+    .txt_apresentacao h2 {
+        font-size: 36px;
+    }
+
+    .xt_tela1 {
+        font-size: 32px;
+    }
+
+    .tela2 {
+        top: 70vh;
+    }
+
+    .tela2 h2 {
+        font-size: 36px;
+    }
+
+    .p1, .p2, .p3 {
+        grid-area: 4 / 2 / 5 / 5;
+    }
+
+    .btn_contratar {
+        font-size: 16px;
+    }
+
+    .tela3 {
+        top: 105vh;
+    }
+
+    .sobre_tela1 {
+        width: 90%;
+        height: 80%;
+        top: 10%;
+        left: 5%;
+    }
+
+    .img_sobre {
+        width: 100%;
+        height: 90%;
+        padding: 20px;
+    }
+
+    .tela4 {
+        top: 150vh;
+        padding: 30px 15px;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+
+    .contactUs .title h2 {
+        font-size: 1.5em;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+        grid-gap: 10px;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .inputBox input[type="submit"] {
+        max-width: 100%;
+    }
+
+    .info {
+        height: auto;
+    }
+
+    .info .infoBox div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 5px;
+    }
+
+    .sci li a {
+        font-size: 1.5em;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+
+    ul.social-icons li a {
+        width: 2rem;
+        height: 2rem;
+    }
+}

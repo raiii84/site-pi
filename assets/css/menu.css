@@ -1,0 +1,66 @@
+.menu {
+    display: flex;
+    width: 30px;
+    height: 100%;
+    background-color: var(--cor1);
+    position: fixed;
+    z-index: 2;
+}
+
+.box_menu {
+    background-color: #AD00D3;
+    display: grid;
+    position: absolute;
+    width: 30px;
+    height: 200px;
+    top: 45px;
+    left: 15px;
+}
+
+#message__github{
+    display:none;
+    position:absolute;
+    top: 15px; 
+    left:50%;
+    right:0;
+    margin: auto;
+    width:100px;
+    height:20px;
+    cursor:pointer;
+}
+
+#message__linkedin {
+    display:none;
+    position:absolute;
+    top: 65px; 
+    left:80%;
+    right:0;
+    margin: auto;
+    width:100px;
+    height:20px;
+    cursor:pointer;
+}
+
+#message__instagram {
+    display:none;
+    position:absolute;
+    top: 115px; 
+    left:50%;
+    right:0;
+    margin: auto;
+    width:100px;
+    height:20px;
+    cursor:pointer;
+}
+
+#message__twitter {
+    display:none;
+    position:absolute;
+    top: 165px; 
+    left:70%;
+    right:0;
+    margin: auto;
+    width:100px;
+    height:20px;
+    cursor:pointer;
+}
